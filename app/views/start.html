@@ -1,0 +1,188 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Start page example
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="#">Section</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link">Subsection</a>
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        {% if serviceName %} {{ serviceName }} {% endif %}
+      </h1>
+
+      <p>Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>You can use the Digital Marketplace to find a team to work on a digital outcome, programme or service - such as a new integrated website, strategic delivery programme or an accessibility audit.</li>
+        <li>You need to write ‘requirements’ to describe the situation or problem and ask suppliers to propose a solution and provide a team.</li>
+        <li>
+The members of the team can’t work for you outside the scope of your written requirements.
+</li>
+      </ul>
+
+
+
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p>1.You can talk to suppliers before you start to help refine your requirements. This is sometimes called early market engagement or ‘pre-tender market engagement’ (PTME).
+Contact us at cloud_digital@crowncommercial.gov.uk for the current list of supplier contact details.
+Read more about pre-tender market engagement</p>
+
+      <p>2.Get budget approval before you start the buying process.
+If you’re buying for central government, you have to go through the digital and IT spend control process before you publish your requirements on the Digital Marketplace.
+If you’re buying for a public sector organisation outside of central government, you must get any internal approval you need.
+</p>
+
+      <p>3.Check the IR35 status of your proposed engagement by using the HMRC Check employment status for tax (CEST) tool.
+When using the CEST tool the term worker should be considered as the supplier.
+Only engagements that fall outside IR35 can be procured using the Digital Outcomes and Specialists framework.
+You should keep a copy of the CEST determination for your records.
+</p>
+      <p>4.Plan the end-to-end procurement timetable taking into account any security clearance lead times and the availability of internal resource for evaluators and moderators at the shortlisting and evaluation stages.</p>
+
+      <p>5.Contact us at cloud_digital@crowncommercial.gov.uk for assistance in checking your draft requirements or with any queries you may have.</p>
+
+<h2 class="govuk-heading-m">Write and publish your requirements</h2>
+
+  <p>6.Write your requirements and say how you’re going to evaluate suppliers.</p>
+
+  <p>7.Publish your requirements and evaluation criteria so suppliers can apply for the work. This information will be published on the Digital Marketplace where anyone can see it. Suppliers will have two weeks to respond.
+</p>
+
+<h2 class="govuk-heading-m">Answer supplier questions</h2>
+
+<p>8.Post all supplier questions and answers on the Digital Marketplace promptly. Answer all questions at least one working day before the deadline to give suppliers time to decide if the work is right for them.</p>
+
+<h2 class="govuk-heading-m">Shortlist and evaluate suppliers</h2>
+
+<p>9.Create your shortlist by reviewing and scoring the ‘essential’ and ‘nice-to-have’ skills and experience provided by suppliers against your published criteria. This information will be sent to you automatically by the Digital Marketplace in a csv file once the deadline has passed. You will review and score outside the Digital Marketplace using your own systems or processes.</p>
+
+<p>10.Give feedback to suppliers who have not been shortlisted and explain why they didn’t meet the requirements.</p>
+
+<p>11.Invite shortlisted suppliers to the assessment stage. You must only use the assessment methods you said you’d use when you published your requirements.</p>
+
+<p>12.Evaluate written proposals and your chosen additional assessment methods to find the right supplier for your needs. The evaluation process is conducted outside the Digital Marketplace to a format and timetable of your choosing and has to be fair, open and transparent.</p>
+
+<h2 class="govuk-heading-m">Award contract</h2>
+
+<p>13.Award a contract to the supplier that best meets your needs and give feedback to unsuccessful suppliers. A standstill period is not required but is recommended to deal with any supplier queries or challenges.</p>
+
+<p>14.You must publish details of all completed contracts on Contracts Finder and update the Digital Marketplace with details of your award (or cancellation of requirements if you have not been able to find a suitable supplier).</p>
+
+<p>The buying process should take around 6-8 weeks depending on your own internal governance and resource availability.<p>
+
+Read more about:
+
+how to buy
+how suppliers have been evaluated
+
+<h2 class="govuk-heading-m">Confirm engagement is outside IR35</h2>
+
+<p>The Digital Outcomes and Specialists framework is for the procurement of bespoke digital services not resources.
+
+Specialists must be employed or contracted by the supplier - known as working ‘off-payroll’ or ‘outside IR35’.
+
+You’re responsible for checking that the specialist is working outside IR35.<p>
+
+  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        This is an outside IR35 requirement.
+      </h1>
+    </legend>
+
+    <div class="govuk-radios govuk-radios--inline">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="changed-name">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="changed-name-2">
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<p>If Yes - proceed to next question - What you want to call your requirements</p>
+
+<a href="name_your_requirements" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8"  data-module="govuk-button">
+  Name your requirements
+  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+    <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z"></path>
+  </svg>
+</a>
+
+<p>If No - Find contractors and interim staff through:</p>
+
+<ul>
+<li>Public Sector Resourcing</li>
+<li>Non Clinical Temporary and Fixed Term Staff</li>
+<li>Management Consultancy Framework Two </li>
+</ul>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Subsection
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Related link
+              </a>
+            </li>
+            <li>
+              <a href="#" class="govuk-!-font-weight-bold">
+                More <span class="govuk-visually-hidden">in Subsection</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+
+{% endblock %}

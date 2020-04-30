@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/contract_length">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Additional terms and conditions
+      </h1>
+
+      <h2 class="govuk-heading-l">
+    Optional
+      </h2>
+
+      <p>You should use the standard contract unless your organisation needs to include additional terms and conditions.
+</p>
+
+<p>Reference to your organisation’s Travel and Subsistence policy can be added as a url, in support of any special working arrangement requirements.  </p>
+
+<p>Read about how the terms and conditions work.</p>
+
+
+
+</p>
+
+<p>100 words remaining
+</p>
+
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/budget_range" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+
+{% endblock %}

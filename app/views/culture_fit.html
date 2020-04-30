@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/technical_competence">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Cultural fit criteria
+      </h1>
+
+<p>Cultural fit is about how well you and the supplier work together.
+</p>
+      <h2 class="govuk-heading-m">
+        Cultural fit is
+
+      </h2>
+
+      <ul>
+        <li>how the supplier works with other people</li>
+        <li>how the supplier solves problems</li>
+        <li>the supplier’s approach to making decisions</li>
+        <li>how the supplier shares knowledge and experience</li>
+        <li>the supplier’s attitude to making mistakes</li>
+      </ul>
+
+
+      <h2 class="govuk-heading-m">
+        Cultural fit isn't
+
+      </h2>
+
+
+      <ul>
+        <li>whether the supplier looks, talks or behaves in the same way as you</li>
+        <li>about having agile skills – that’s technical competence</li>
+
+      </ul>
+
+      <h2 class="govuk-heading-m">
+      Individual criteria weighting (optional)
+
+      </h2>
+
+      <p>You can give a weighting to individual criteria, eg ‘transparent and collaborative when making decisions – (5%) or (15 points)’. If you choose to add a weighting, you must do it for all individual criteria.</p>
+
+      <h2 class="govuk-heading-m">
+      Add cultural fit criteria
+
+      </h2>
+
+
+      <p>When you evaluate shortlisted suppliers on cultural fit, you must use the criteria you list here.</p>
+
+      <h2 class="govuk-heading-m">
+      Suggested criteria
+
+      </h2>
+
+        <div>
+          <ul>
+            <li>Work as a team with our organisation and other suppliers</li>
+<li>Have a no-blame culture and encourage people to </li>learn from their mistakes
+<li>Take responsibility for their work
+<li>Share knowledge and experience with other team members</li>
+<li>Challenge the status quo</li>
+<li>Be comfortable standing up for their discipline</li>
+<li>Can work with clients with low technical expertise</li>
+
+            </ul>
+          </div>
+
+
+<div>
+          <h2 class="govuk-heading-m">
+        The supplier should: </h2>
+
+<p2>(20 criteria available)</p2>
+  </div>
+
+<div>
+  <form class="form" action="/payment_approach" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+</div>
+
+{% endblock %}

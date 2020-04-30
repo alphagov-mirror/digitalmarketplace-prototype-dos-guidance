@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/t&c">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Budget range
+
+      </h1>
+
+      <h2 class="govuk-heading-l">
+    Optional
+      </h2>
+
+      <p>
+Include how much you can spend.
+
+</p>
+
+<p>Suppliers will find it helpful if you can provide a breakdown of costs so they can understand the size and scale of the project. Using a budget range is best practice,
+eg £750,000 to £1,000,000
+ </p>
+
+<p>The figures quoted should be excluding VAT and any travel and subsistence.
+</p>
+
+<p>You must have budget approval before you publish your requirements.
+
+</p>
+
+<p>You should talk to suppliers before you buy so you know how much the work might cost.</p>
+
+<p>100 words remaining
+</p>
+
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/summary" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+
+{% endblock %}

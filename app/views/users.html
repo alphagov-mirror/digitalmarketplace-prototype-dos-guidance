@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/problem_to_solve">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Who the users are and what they need to do
+      </h1>
+
+      <p>You must describe who the users of the digital service will be.</p>
+
+<p>Will this be internal teams/stakeholders? How will they use the service? Will citizens be using the digital service? Detail as much as possible on the level of user and what they need from the service.</p>
+
+<p>You should use this format:</p>
+
+<p>As a… (who is the user?)</p>
+
+<p>I need to… (what does the user want to do?)</p>
+
+<p>So that… (why does the user want to do this?)</p>
+
+<p>eg As a carer, I need to know if I can get Carer’s Allowance, so that I know if I should apply for it or not.</p>
+
+<p>200 words remaining
+</p>
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/market_engagement" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+</form>
+
+{% endblock %}

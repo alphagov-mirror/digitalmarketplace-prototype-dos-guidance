@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/reason_for_work">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Problem to be solved
+      </h1>
+
+      <p>eg patients can’t access their medical records
+
+You must be clear on what problem suppliers will be solving. You must not be describing the solution you want. Suppliers will be able to provide innovative solutions if the problem is clearly described.
+
+If you had 60 seconds to explain what problem you as a buyer are trying to solve, how would you describe this to enable the supplier to propose a solution?
+
+If you are looking for one capability, eg a team of developers, you need to describe this. If the supplier is working on different work packages relating to the overall programme outcome this needs to be described so it doesn't look like you are buying a 'bench' of roles which is not within scope of the framework.</p>
+
+<p>200 words remaining</p>
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/users" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+</form>
+
+{% endblock %}

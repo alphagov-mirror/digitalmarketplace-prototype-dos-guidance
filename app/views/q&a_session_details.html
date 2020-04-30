@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/describe_question">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Question and answer session details
+      </h1>
+
+      <h2 class="govuk-heading-l">
+    Optional
+      </h2>
+
+      <p>You must give details of what type of session you want to hold, when it is and any details the attendees need.</p>
+<ul>
+<li>the type of session you want to run, eg webinar, phone conference or meeting </li>
+<li>the date and time of the session (this should happen within 1 week of publishing your requirements)</li>
+</ul>
+<p>Depending on the type of session you choose, you could also include:</p>
+<ul>
+<li>software needed</li>
+<li>the url</li>
+<li>the phone number</li>
+<li>the access code</li>
+<li>the address (including postcode)</li>
+<li>anything else needed to take part</li>
+</ul>
+
+<p>This information will only be available to eligible suppliers who have logged in.</p>
+
+<p>You must post all questions and answers on the Digital Marketplace so all suppliers can see them.</p>
+
+<p>100 words remaining</p>
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/review_requirements" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+{% endblock %}

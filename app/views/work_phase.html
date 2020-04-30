@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/work_done">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Phase the work is currently in  </h1>
+</div>
+
+<div><p>The phases described are for agile development. The maturity of the project will help to determine the type of specialists required.
+
+Read more about service design phases.</p></div>
+
+
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+        Not started
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Not applicable
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Discovery
+        </label>
+
+        <p> A short phase, in which you start researching the needs of your service’s users, find out what you should be measuring, and explore technological or policy-related constraints.</p>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          Alpha
+        </label>
+        <p>A short phase in which you prototype solutions for your users needs. You’ll be testing with a small group of users or stakeholders, and getting early feedback about the design of the service.</p>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          Beta
+        </label>
+
+        <p>You’re developing against the demands of a live environment, understanding how to build and scale while meeting user needs. You’ll also be releasing a version to test in public.</p>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+          Live
+        </label>
+<p>The work doesn’t stop once your service is live. You’ll be iteratively improving your service, reacting to new needs and demands, and meeting targets set during its development.</p>
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+
+  </div>
+    </div>
+
+    <form class="form" action="/existing_team" method="post">
+    <button class="govuk-button" data-module="govuk-button">
+  Save and continue
+    </button>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/existing_team">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Address where the work will take place
+      </h1>
+
+
+
+      <div class="govuk-form-group">
+
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+
+<p>100 words remaining
+</p>
+
+
+  </div>
+    </div>
+
+
+    <form class="form" action="/arrangements" method="post">
+    <button class="govuk-button" data-module="govuk-button">
+  Save and continue
+    </button>
+  </form>
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/org_name">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Why the work is being done
+      </h1>
+
+<p>This needs to be clear to suppliers and give background as to why this work is needed.
+
+Describe the organisation or policy goal the work supports, eg how a new law changes the way users receive government payments. Is there a current digital service that is no longer fit for purpose and not meeting user's needs?
+
+Include any important dates. You must say if you need the work to be done by a certain date. This will help suppliers understand any time constraints.
+
+200 words remaining
+</p>
+
+</div>
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+  <form class="form" action="/problem_to_solve" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+</form>
+    </div>
+
+
+
+
+{% endblock %}

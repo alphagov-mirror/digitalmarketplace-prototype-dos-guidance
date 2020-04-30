@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/work_phase">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Existing team
+      </h1>
+
+
+
+      <p>Describe the team the supplier will be working with (quoting their roles and titles),
+
+eg whether the team will be working with another supplier.
+
+</p>
+
+<p>100 words remaining
+</p>
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/address" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/assess_suppliers">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Describe question and answer session
+      </h1>
+
+
+
+
+<p>While the application period is open, you need to reply to all questions suppliers ask about your requirements.</p>
+
+<p>When a supplier asks a question, you’ll be sent an email to the email address you registered with.<p>
+
+<p>You’ll need to post all questions and answers on the Digital Marketplace so that all suppliers can see them. This should be done promptly, and ideally within a 24 hour period as they are received. You must answer all questions at least one working day before the deadline to give suppliers time to decide if the work is right for them.</p>
+
+<p>In addition, providing a dedicated question and answer session means you can explain your needs and answer any questions quickly.</p>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+
+  <form class="form" action="/q&a_session_details" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+
+{% endblock %}

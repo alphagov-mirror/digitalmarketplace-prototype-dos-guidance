@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/q&a_session_details">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Preview your requirements
+      </h1>
+
+      <h2 class="govuk-heading-l">
+  Check before publishing
+      </h2>
+<div>
+
+  <dl>
+      <ul>
+<span>
+      <li> Have you specified the correct level of security clearance (if applicable) and stated that you would be willing to sponsor the supplier?    </li>
+      </span>
+      <span><li> Is the latest start date reasonable given your procurement timeline and planning for any contingencies? </li>
+        </span>
+      <span><li> Does the expected contract length comply with the optional maximum 25% allowed? (eg you cannot state initial contract for 12 months with an option to extend by a further 12 months) </li>
+        </span>
+      <span><li> Do you have clearly defined essential criteria; relevant to your user and technical needs, and organisational goals and objectives; on which to conduct effective shortlisting?  </li>
+      </span>
+      <span><li> Check that written criteria do not discriminate against suppliers. (it can be as simple as adding ‘or equivalent’ to criteria and setting clear scoring guidance for evaluators) </li>
+</span>
+      </ul>
+
+      </div>
+
+      <p>Once you have published your requirements you have limited scope to change any of the details. You can only edit your requirements if the new content would not have affected a supplier’s original decision to apply.
+</p>
+
+<p>
+Read how to change, withdraw or cancel your requirements. </p>
+
+<form class="form" action="/publish_requirements" method="post">
+<button class="govuk-button" data-module="govuk-button">
+Save and continue
+</button>
+  </div>
+
+
+
+{% endblock %}

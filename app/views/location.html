@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Where you want the supplier to work
+      </h1>
+
+      <p>You are only able to select one option so this should be the primary location the supplier will be working. You are able to provide further information later in the requirement, under 'Address where the work will take place' and 'Working arrangements'.
+
+Suppliers have said where they’ll provide outcomes.
+</p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="event-name">
+
+  </label>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
+
+    </div>
+  </div>
+
+
+  <button class="govuk-button" data-module="govuk-button">
+    Save and continue
+  </button>
+{% endblock %}

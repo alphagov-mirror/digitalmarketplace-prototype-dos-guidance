@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/users">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Early market engagement
+      </h1>
+
+      <h2 class="govuk-heading-l">
+    Optional
+      </h2>
+
+      <p>If you’ve done early market engagement, with suppliers or users, you must include a summary of any relevant findings.
+
+The Digital Marketplace does not support attached documents. You can place a url in the text to signpost suppliers to documents that you are hosting.
+</p>
+
+<p>200 words remaining
+</p>
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/work_done" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+</form>
+{% endblock %}

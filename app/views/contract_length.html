@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/start_date">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Expected contract length
+      </h1>
+
+      <h2 class="govuk-heading-l">
+    Optional
+      </h2>
+
+      <p>Contracts can’t last for more than 24 months.</p>
+
+<p>There is an optional maximum extension of 25% of the initial contract period. This must be detailed upfront if you think you may need to use it.</p>
+
+<p>eg If the initial contract period was 24 months this would allow an optional extension of upto 6 months.</p>
+
+<p>If the initial contract period was 12 months this would allow an optional extension of upto 3 months.</p>
+
+
+
+<div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="100">
+  <div class="govuk-form-group">
+
+
+    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+  </div>
+
+  <span id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+    You can enter up to 100 characters
+  </span>
+
+</div>
+
+<form class="form" action="/t&c" method="post">
+<button class="govuk-button" data-module="govuk-button">
+Save and continue
+</button>
+  </div>
+
+
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/address">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Working arrangements
+      </h1>
+
+
+
+      <p>Describe how you want to work with the individual or team. If the supplier's working arrangements are across multiple sites you can add detail of this here.
+
+Explain why you want to work with them in this way.
+
+Include any limits on expenses.
+
+eg the supplier will be required to work in our London office 3 days per week for face-to-face team meetings, and 2 days remote working.
+
+
+
+</p>
+
+<p>100 words remaining
+</p>
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/security_clearance" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+{% endblock %}

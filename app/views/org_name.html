@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/description_of_work">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Organisation the work is for
+      </h1>
+
+<p>eg National Audit Office or Lewisham Council
+
+100 characters maximum
+</p>
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/reason_for_work" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+</form>
+
+{% endblock %}

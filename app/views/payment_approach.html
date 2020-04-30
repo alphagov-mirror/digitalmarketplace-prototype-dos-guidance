@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/culture_fit">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Payment approach
+      </h1>
+
+
+      <p>You should choose the approach that best fits the way you work and provides the best value for money.
+</p>
+
+<p>Fixed price
+</p>
+
+<p>A fixed price approach can be more expensive because the supplier owns most of the risk. It works best when your requirements are well defined so the supplier can provide an accurate quote without incorporating extra costs. The supplier must do all the work you specify in each particular ‘statement of work’ within the time you agreed it would take.
+</p>
+
+<p>Time and materials</p>
+
+<p>A time and materials approach means you own more of the risk. The supplier can send a pricing matrix showing how long they need to provide the work. If it takes longer to do the work defined in a statement of work, you pay the day rate and expenses for any extra days worked.
+</p>
+
+<p>Capped time and materials</p>
+
+<p>A capped time and materials approach is the same as a time and materials approach but there’s a limit on how much you have to pay for the work. If you reach the limit before the work is finished, the supplier has to complete the work at their own cost. If the supplier finishes the work before they said they would, you only pay them for the time they took to do the work.</p>
+
+
+<form class="form" action="/assess_suppliers" method="post">
+<button class="govuk-button" data-module="govuk-button">
+Save and continue
+</button>
+</div>
+
+
+
+
+
+{% endblock %}

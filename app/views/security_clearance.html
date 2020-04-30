@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/arrangements">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+      Security clearance
+      </h1>
+
+      <h2 class="govuk-heading-l">
+    Optional
+      </h2>
+
+      <p>Describe any security clearance the individual or team must have when they start work. We suggest all suppliers are subject to BPSS as a minimum for all requirements.
+
+You shouldn’t exclude suppliers if they don’t currently have the security clearance you need as this would discriminate against SME’s.
+
+You may need to organise security clearance and sponsor a supplier through this process if they are successfully awarded a contract.
+
+Read about the baseline personnel security standard
+</p>
+
+<p>50 words remaining
+</p>
+
+
+
+
+      <div class="govuk-form-group">
+    <label class="govuk-label" for="event-name">
+
+    </label>
+    <input class="govuk-input" id="event-name" name="event-name" type="text">
+  </div>
+    </div>
+  </div>
+
+  <form class="form" action="/start_date" method="post">
+  <button class="govuk-button" data-module="govuk-button">
+Save and continue
+  </button>
+
+{% endblock %}
