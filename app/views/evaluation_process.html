@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Question page
+  Shortlist and evaluation process
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/summary">Back</a>
+  <a class="govuk-back-link" href="/check-your-answers_dmp">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -21,69 +21,109 @@
       There are 3 stages to finding the supplier that best meets your needs.
       </p>
 
+      <h2 class="govuk-heading-s">
+      1. View suppliers who applied
+      </h2>
 
-      <ol class="govuk-list govuk-list--number">
+      <p>
+      Only suppliers who have said they can meet all your essential skills
+      and experience will be notified to you. Suppliers will also declare
+      which of your nice‑to‑have skills and experience they have. Suppliers
+      who don’t meet your essential skills and experience are excluded.
+      </p>
 
-        <li>
-          <p>
-          View suppliers who applied
-          </p>
+      <h2 class="govuk-heading-s">
+      2. Create a shortlist
+      </h2>
 
-          <p>
-          Only suppliers who have said they can meet all your essential skills
-          and experience will be notified to you. Suppliers will also declare
-          which of your nice‑to‑have skills and experience they have. Suppliers
-          who don’t meet your essential skills and experience are excluded.
-          </p>
+      <p>
+      Once you have a list of eligible suppliers, you can exclude the suppliers who:
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>have the least nice‑to‑have skills and experience</li>
+        <li>can’t start when you need them to</li>
+      </ul>
+
+      <p>
+      You may need to ask for evidence of skills and experience if you have too many suppliers.
+      </p>
+
+      <h2 class="govuk-heading-s">
+      3. Evaluate your shortlist
+      </h2>
+
+      <p>Ask the shortlisted suppliers for</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>evidence of their skills and experience</li>
+        <li>a proposal explaining how they plan to meet your requirements</li>
+      </ul>
+
+      <p>
+      All suppliers must provide a written proposal. You can choose
+      additional assessment methods, for example a presentation.
+      </p>
+
+      <p>
+      You must tell suppliers how you’ll evaluate and assess them.
+      </p>
+
+    </div>
+
+    <div class="govuk-grid-column-full">
+
+      <ul class="app-task-list__items govuk-!-padding-left-0">
+
+        <li class="app-task-list__item">
+          <span class="app-task-list__task-name">
+            <a href="/number_to_evaluate">
+            Set how many suppliers to evaluate
+            </a>
+          </span>
         </li>
 
-        <li>
-          <p>
-          Create a shortlist
-          </p>
-
-          <p>
-          Once you have a list of eligible suppliers, you can exclude the suppliers who:
-          </p>
-
-          <ul class="govuk-list govuk-list--bullet">
-            <li>have the least nice‑to‑have skills and experience</li>
-            <li>can’t start when you need them to</li>
-          </ul>
-
-          <p>
-          You may need to ask for evidence of skills and experience if you have too many suppliers.
-          </p>
-
+        <li class="app-task-list__item">
+          <span class="app-task-list__task-name">
+            <a href="/evaluation_weighting">
+            Set evaluation weighting
+            </a>
+          </span>
         </li>
 
-        <li>
-          <p>Evaluate your shortlist</p>
-
-          <p>Ask the shortlisted suppliers for</p>
-
-          <ul class="govuk-list govuk-list--bullet">
-            <li>evidence of their skills and experience</li>
-            <li>a proposal explaining how they plan to meet your requirements</li>
-          </ul>
-
-          <p>
-          All suppliers must provide a written proposal. You can choose
-          additional assessment methods, for example a presentation.
-          </p>
-
-          <p>
-          You must tell suppliers how you’ll evaluate and assess them.
-          </p>
+        <li class="app-task-list__item">
+          <span class="app-task-list__task-name">
+            <a href="/technical_competence">
+            Set technical competence criteria
+            </a>
+          </span>
         </li>
 
-      </ol>
+        <li class="app-task-list__item">
+          <span class="app-task-list__task-name">
+            <a href="/culture_fit">
+            Choose cultural fit criteria
+            </a>
+          </span>
+        </li>
 
-      <form class="form" action="/number_to_evaluate" method="post">
-      <button class="govuk-button" data-module="govuk-button">
-        Continue
-      </button>
-      </form>
+        <li class="app-task-list__item">
+          <span class="app-task-list__task-name">
+            <a href="/payment_approach">
+            Choose payment approach
+            </a>
+          </span>
+        </li>
+
+        <li class="app-task-list__item">
+          <span class="app-task-list__task-name">
+            <a href="/assess_suppliers">
+            Choose assessment methods
+            </a>
+          </span>
+        </li>
+
+      </ul>
 
     </div>
   </div>
