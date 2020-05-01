@@ -13,55 +13,79 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
+      <h1 class="govuk-heading-l">
       Shortlist and evaluation process
       </h1>
 
+      <p>
+      There are 3 stages to finding the supplier that best meets your needs.
+      </p>
 
 
-      <p>There are 3 stages to finding the supplier that best meets your needs.
-</p>
+      <ol class="govuk-list govuk-list--number">
 
+        <li>
+          <p>
+          View suppliers who applied
+          </p>
 
-<ol>
+          <p>
+          Only suppliers who have said they can meet all your essential skills
+          and experience will be notified to you. Suppliers will also declare
+          which of your nice‑to‑have skills and experience they have. Suppliers
+          who don’t meet your essential skills and experience are excluded.
+          </p>
+        </li>
 
-  <li>View suppliers who applied</li>
-  <p>Only suppliers who have said they can meet all your essential skills and experience will be notified to you. Suppliers will also declare which of your nice‑to‑have skills and experience they have. Suppliers who don’t meet your essential skills and experience are excluded.</p>
-    <li>Create a shortlist</li>
-    <p>Once you have a list of eligible suppliers, you can exclude the suppliers who:</p>
+        <li>
+          <p>
+          Create a shortlist
+          </p>
 
-    <div>
-      <ul>
-    <li>have the least nice‑to‑have skills and experience</li>
-    <li>can’t start when you need them to</li>
-    <ul>
-      </div>
+          <p>
+          Once you have a list of eligible suppliers, you can exclude the suppliers who:
+          </p>
 
-      <div>
-  <p>You may need to ask for evidence of skills and experience if you have too many suppliers.</p>
-  </div>
-  <li>Evaluate your shortlist
-</li>
-<p>Ask the shortlisted suppliers for</p>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>have the least nice‑to‑have skills and experience</li>
+            <li>can’t start when you need them to</li>
+          </ul>
 
-<div>
-<ul>
-<li>evidence of their skills and experience</li>
-<li>a proposal explaining how they plan to meet your requirements
-</li>
-</ul>
-</div>
+          <p>
+          You may need to ask for evidence of skills and experience if you have too many suppliers.
+          </p>
 
-<p>All suppliers must provide a written proposal. You can choose additional assessment methods, for example a presentation.</p>
+        </li>
 
+        <li>
+          <p>Evaluate your shortlist</p>
 
+          <p>Ask the shortlisted suppliers for</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+            <li>evidence of their skills and experience</li>
+            <li>a proposal explaining how they plan to meet your requirements</li>
+          </ul>
+
+          <p>
+          All suppliers must provide a written proposal. You can choose
+          additional assessment methods, for example a presentation.
+          </p>
+
+          <p>
+          You must tell suppliers how you’ll evaluate and assess them.
+          </p>
+        </li>
+
+      </ol>
+
+      <form class="form" action="/number_to_evaluate" method="post">
+      <button class="govuk-button" data-module="govuk-button">
+        Continue
+      </button>
+      </form>
 
     </div>
   </div>
-
-  <form class="form" action="/number_to_evaluate" method="post">
-  <button class="govuk-button" data-module="govuk-button">
-Save and continue
-  </button>
 
 {% endblock %}
