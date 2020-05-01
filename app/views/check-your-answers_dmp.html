@@ -1,263 +1,158 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Check your answers
+  {{ data['requirements-name'] | default('Your requirements', true) }}
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/name_your_requirements">Back</a>
+  {{ govukBreadcrumbs({
+    items: [
+      {
+        text: "Digital Marketplace",
+        href: "#"
+      },
+      {
+        text: "Your account",
+        href: "#"
+      },
+      {
+        text: "Your requirements",
+        href: "#"
+      },
+      {
+        text: (data['requirements-name'] | default('Your requirements', true))
+      }
+    ]
+  }) }}
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds-from-desktop">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Overview</h1>
+      <h1 class="govuk-heading-xl">
+        {{ data['requirements-name'] | default('Your requirements', true)}}
+      </h1>
 
       <h2 class="govuk-heading-m">1. Write requirements</h2>
 
-<p> Before you can publish your requirements, you must complete:</p>
+      <p> Before you can publish your requirements, you must complete:</p>
 
-      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Title
-          </dt>
-          <dd class="govuk-summary-list__value">
+      <ol class="govuk-list">
+        <li>
+        <a href="/name_your_requirements">Title</a>
+        </li>
+        <li>
+        <a href="/location">Location</a>
+        </li>
+        <li>
+        <a href="/description_of_work">Description of work</a>
+        </li>
+      </ol>
 
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
-              <span class="govuk-visually-hidden"> name</span>
-            </a>
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Location
-          </dt>
-          <dd class="govuk-summary-list__value">
-
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
-              <span class="govuk-visually-hidden"> </span>
-            </a>
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Description of work
-          </dt>
-          <dd class="govuk-summary-list__value">
-
-            <br>
-            <br>
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
-
-            </a>
-          </dd>
-        </div>
-      </dl>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
       <h2 class="govuk-heading-m">2. Set how you’ll evaluate suppliers</h2>
 
-<p>Before you can publish your requirements, you must complete:</p>
-      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-          Shortlist and evaluation process
+      <p>Before you can publish your requirements, you must complete:</p>
 
-          </dt>
-          <dd class="govuk-summary-list__value">
+      <ol class="govuk-list">
+        <li>
+        <a href="/evaluation_process">Shortlist and evaluation process</a>
+        </li>
+      </ol>
 
-          </dd>
-          <dd class="govuk-summary-list__actions">
-            <a href="#">
-              Change
-            </a>
-          </dd>
-            </div>
-      </dl>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-  <h2 class="govuk-heading-m">  3.Publish requirements </h2>
+      <h2 class="govuk-heading-m">3. Publish requirements</h2>
 
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-      Describe question and answer session
+      <ol class="govuk-list">
+        <li>
+        <a href="/evaluation_process">Describe question and answer session</a>
+        </li>
+        <li>
+        <a href="/evaluation_process">Preview your requirements</a>
+        </li>
+        <li>
+        <a href="/evaluation_process">Publish your requirements</a>
+        </li>
+      </ol>
 
-      </dt>
-      <dd class="govuk-summary-list__value">
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-      Preview your requirements
+      <h2 class="govuk-heading-m">4. Answer supplier questions </h2>
 
-      </dt>
-      <dd class="govuk-summary-list__value">
+      <p>
+      When you’ve published your requirements, you must answer all supplier questions.
+      </p>
 
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-      Publish your requirements
+      <p>
+      <a href="#">How to answer supplier questions</a>
+      </p>
 
-      </dt>
-      <dd class="govuk-summary-list__value">
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
+      <h2 class="govuk-heading-m">5. Shortlist </h2>
 
-  <h2 class="govuk-heading-m">4. Answer supplier questions </h2>
+      <p>
+      After the application deadline, shortlist the suppliers who applied.
+      </p>
 
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        When you’ve published your requirements, you must answer all supplier questions.
-  How to answer supplier questions
+      <p>
+      <a href="#">How to shortlist suppliers</a>
+      </p>
 
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-      </dt>
-      <dd class="govuk-summary-list__value">
+      <h2 class="govuk-heading-m">6. Provide supplier feedback </h2>
 
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
+      <p>
+      Tell suppliers if they have not been shortlisted and explain why they
+      didn’t meet the requirements. <a href="#">There are template emails you
+      can use to give feedback to unsuccessful suppliers</a>.
+      </p>
 
-  <h2 class="govuk-heading-m">5. Shortlist </h2>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        After the application deadline, shortlist the suppliers who applied.
-  How to shortlist suppliers
+      <h2 class="govuk-heading-m">7. Evaluate </h2>
 
+      <p>
+      Evaluate your shortlist using the criteria and methods you published with
+      your requirements. You should be able to <a href="#">demonstrate a clear
+      audit trail</a>, including any questions you’ve answered and any
+      evaluation you’ve made.
+      </p>
 
+      <ul class="govuk-list">
+        <li>
+          <a href="#">How to evaluate suppliers</a>
+        </li>
+        <li>
+          <a href="#">How to buy fairly</a>
+        </li>
+      </ul>
 
-      </dt>
-      <dd class="govuk-summary-list__value">
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
+      <h2 class="govuk-heading-m">8. Award contract </h2>
 
+      <p>
+      You must give your chosen supplier a contract before they start work.
+      </p>
 
-  <h2 class="govuk-heading-m">6. Provide supplier feedback </h2>
-
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-      Tell suppliers if they have not been shortlisted and explain why they didn’t meet the requirements. There are template emails you can use to give feedback to unsuccessful suppliers.
-
-
-
-      </dt>
-      <dd class="govuk-summary-list__value">
-
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
-
-  <h2 class="govuk-heading-m">7. Evaluate </h2>
-
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        Evaluate your shortlist using the criteria and methods you published with your requirements. You should be able to demonstrate a clear audit trail, including any questions you’ve answered and any evaluation you’ve made.
-  How to evaluate suppliers
-  How to buy fairly
-
-      </dt>
-      <dd class="govuk-summary-list__value">
-
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
-
-  <h2 class="govuk-heading-m">8. Award contract </h2>
-
-  <dl class="govuk-summary-list govuk-!-margin-bottom-9">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        You must give your chosen supplier a contract before they start work.
-  How to award a contract
-  Download the Digital Outcomes and Specialists 4 contract
-  How to manage a contract
-
-
-      </dt>
-      <dd class="govuk-summary-list__value">
-
-      </dd>
-      <dd class="govuk-summary-list__actions">
-        <a href="#">
-          Change
-        </a>
-      </dd>
-        </div>
-  </dl>
-
-      <h2 class="govuk-heading-m">Now send your application</h2>
-
-      <p>By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.</p>
-
-
-
+      <ul class="govuk-list">
+        <li>
+        <a href="#">How to award a contract</a>
+        </li>
+        <li>
+        <a href="#">Download the Digital Outcomes and Specialists 4 contract</a>
+        </li>
+        <li>
+        <a href="#">How to manage a contract</a>
+        </li>
+      </ul>
 
     </div>
   </div>
 
-  <form class="form" action="/where" method="post">
-  <button class="govuk-button" data-module="govuk-button">
-Save and continue
-  </button>
-</form>
 {% endblock %}
