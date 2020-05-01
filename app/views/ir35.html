@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Confirm engagement is outside IR35
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "/start"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Confirm engagement is outside IR35
+      </h1>
+
+      <p>
+      The Digital Outcomes and Specialists framework is for the procurement of bespoke digital services not resources.
+      </p>
+
+      <p>
+      Specialists must be employed or contracted by the supplier - known as working ‘off-payroll’ or ‘outside IR35’.
+      </p>
+
+      <p>
+      You’re responsible for checking that the specialist is working outside IR35.
+      </p>
+
+      <form action="/ir35-answer" method="post" class="form">
+
+      {{ govukRadios({
+        classes: "govuk-radios--inline",
+        idPrefix: "ir35",
+        name: "ir35",
+        fieldset: {
+          legend: {
+            text: "Is this is an outside IR35 requirement?",
+            classes: "govuk-fieldset__legend--m"
+          }
+        },
+        items: [
+          {
+            value: "yes",
+            text: "Yes"
+          },
+          {
+            value: "no",
+            text: "No"
+          }
+        ]
+      }) }}
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+{% endblock %}
