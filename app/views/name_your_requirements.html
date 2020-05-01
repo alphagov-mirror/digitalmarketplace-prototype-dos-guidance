@@ -17,25 +17,26 @@
         What you want to call your requirements
       </h1>
 
-      <p>The title is the first line to appear on the supplier opportunities page on the Digital Marketplace. It should be a clear statement of your key requirement. It can contain a reference - eg ABC123 - to help you refer to your requirements when talking to suppliers.
+      <p>
+      The title is the first line to appear on the supplier opportunities page
+      on the Digital Marketplace. It should be a clear statement of your key
+      requirement. It can contain a reference - eg ABC123 - to help you refer
+      to your requirements when talking to suppliers.
+      </p>
 
+      <form class="form" action="/check-your-answers_dmp" method="post">
 
-</p>
+      {{ govukInput({
+        id: "requirements-name",
+        name: "requirements-name",
+        hint: {
+          text: "100 characters maximum"
+        }
+      }) }}
 
-<div class="govuk-form-group">
-<label class="govuk-label" for="event-name">
-100 characters maximum
-</label>
-<input class="govuk-input" id="event-name" name="event-name" type="text">
-</div>
-
-    </div>
-  </div>
-
-  <form class="form" action="/check-your-answers_dmp" method="post">
-  <button class="govuk-button" data-module="govuk-button">
-Save and continue
-  </button>
+      <button class="govuk-button" data-module="govuk-button">
+      Save and continue
+      </button>
 </form>
 
 {% endblock %}
