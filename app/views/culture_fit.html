@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Question page
+  Cultural fit criteria
 {% endblock %}
 
 {% block beforeContent %}
@@ -17,11 +17,12 @@
       Cultural fit criteria
       </h1>
 
-<p>Cultural fit is about how well you and the supplier work together.
-</p>
+      <p>
+      Cultural fit is about how well you and the supplier work together.
+      </p>
+
       <h2 class="govuk-heading-m">
         Cultural fit is
-
       </h2>
 
       <ul class="govuk-list govuk-list--bullet">
@@ -32,65 +33,61 @@
         <li>the supplier’s attitude to making mistakes</li>
       </ul>
 
-
       <h2 class="govuk-heading-m">
         Cultural fit isn't
-
       </h2>
-
 
       <ul class="govuk-list govuk-list--bullet">
         <li>whether the supplier looks, talks or behaves in the same way as you</li>
         <li>about having agile skills – that’s technical competence</li>
-
       </ul>
 
       <h2 class="govuk-heading-m">
       Individual criteria weighting (optional)
-
       </h2>
 
-      <p>You can give a weighting to individual criteria, eg ‘transparent and collaborative when making decisions – (5%) or (15 points)’. If you choose to add a weighting, you must do it for all individual criteria.</p>
+      <p>
+      You can give a weighting to individual criteria, eg ‘transparent and
+      collaborative when making decisions – (5%) or (15 points)’. If you choose
+      to add a weighting, you must do it for all individual criteria.
+      </p>
 
       <h2 class="govuk-heading-m">
       Add cultural fit criteria
-
       </h2>
 
-
-      <p>When you evaluate shortlisted suppliers on cultural fit, you must use the criteria you list here.</p>
+      <p>
+      When you evaluate shortlisted suppliers on cultural fit, you must use the criteria you list here.
+      </p>
 
       <h2 class="govuk-heading-m">
       Suggested criteria
-
       </h2>
 
-        <div>
-          <ul class="govuk-list govuk-list--bullet">
-            <li>Work as a team with our organisation and other suppliers</li>
-<li>Have a no-blame culture and encourage people to </li>learn from their mistakes
-<li>Take responsibility for their work
-<li>Share knowledge and experience with other team members</li>
-<li>Challenge the status quo</li>
-<li>Be comfortable standing up for their discipline</li>
-<li>Can work with clients with low technical expertise</li>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Work as a team with our organisation and other suppliers</li>
+        <li>Have a no-blame culture and encourage people to learn from their mistakes</li>
+        <li>Take responsibility for their work</li>
+        <li>Share knowledge and experience with other team members</li>
+        <li>Challenge the status quo</li>
+        <li>Be comfortable standing up for their discipline</li>
+        <li>Can work with clients with low technical expertise</li>
+      </ul>
 
-            </ul>
-          </div>
+      <h2 class="govuk-heading-m">
+        The supplier should:
+      </h2>
 
+      <p>
+      (20 criteria available)
+      </p>
 
-<div>
-          <h2 class="govuk-heading-m">
-        The supplier should: </h2>
+      <form class="form" action="/evaluation_process" method="post">
+      <button class="govuk-button" data-module="govuk-button">
+      Save and continue
+      </button>
 
-<p2>(20 criteria available)</p2>
+    </div>
   </div>
-
-<div>
-  <form class="form" action="/evaluation_process" method="post">
-  <button class="govuk-button" data-module="govuk-button">
-Save and continue
-  </button>
-</div>
 
 {% endblock %}
