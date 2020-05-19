@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+  
+    
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/">Digital Marketplace</a>
+    </li>
+    
+  
+    
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Login</li>
+    
+  
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+ 
+        <h1 class="govuk-heading-xl">Log in to the Digital Marketplace</h1>
+      
+        <form action="/name_your_requirements" method="POST">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+             
+      
+              
+      
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="input-email_address">
+          Email address
+        </label>
+      
+        
+        
+        <span id="input-email_address-hint" class="govuk-hint">
+          Enter the email address you used to register with the Digital Marketplace
+        </span>
+      
+      
+        <input class="govuk-input" id="input-email_address" name="email_address" type="email" aria-describedby="input-email_address-hint" autocomplete="username" spellcheck="false">
+      </div>
+      
+              
+      
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="input-password">
+          Password
+        </label>
+      
+      
+        <input class="govuk-input" id="input-password" name="_password" type="password" autocomplete="current-password">
+      </div>
+      
+      
+              <a class="govuk-link govuk-!-margin-bottom-5 govuk-!-display-block" href="/user/reset-password">
+                Forgotten password
+              </a>
+      
+              
+        
+          
+        
+      
+      <button type="submit" class="govuk-button">
+        Log in
+      </button>
+      
+              <a class="govuk-link govuk-!-margin-top-7 govuk-!-font-size-24 govuk-!-display-block" href="/buyers/create">
+                Create a buyer account
+              </a>
+            </div>
+          </div>
+        </form>
+      
+      
+{% endblock %}

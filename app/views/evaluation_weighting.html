@@ -1,11 +1,11 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Question page
+  Evaluation weighting
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="/number_to_evaluate">Back</a>
+  <a class="govuk-back-link" href="/evaluation_process">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -13,33 +13,49 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
+      <h1 class="govuk-heading-l">
         Evaluation weighting
       </h1>
 
-<p> Use the weightings to say how important each evaluation criteria is.</p>
+      <p> Use the weightings to say how important each evaluation criteria is.</p>
 
-<p>Total must add up to 100% <p>
-
+      <p>Total must add up to 100% <p>
 
       <h2 class="govuk-heading-m">
         Technical competence
-
       </h2>
 
-      <p>Technical competence is how well the supplier can do the work you need them to do. It’s also known as ‘technical merit and functional fit’. If a supplier has the right skills and experience, a good understanding of your requirements, and works in an agile way, they should have the technical competence to do the work.</p>
+      <p>
+      Technical competence is how well the supplier can do the work you need
+      them to do. It’s also known as ‘technical merit and functional fit’. If a
+      supplier has the right skills and experience, a good understanding of
+      your requirements, and works in an agile way, they should have the
+      technical competence to do the work.
+      </p>
 
-<p>This can be between 10% and 75%</p>
-
+      {{ govukInput({
+        classes: "govuk-input--width-5",
+        hint: {
+          text: "This can be between 10% and 75%"
+        }
+      }) }}
 
       <h2 class="govuk-heading-m">
         Cultural fit
       </h2>
 
-      <p>Cultural fit is how well you and the supplier will work together. If the supplier’s values and behaviour are similar to your organisation’s, they should be a good cultural fit.</p>
+      <p>
+      Cultural fit is how well you and the supplier will work together. If the
+      supplier’s values and behaviour are similar to your organisation’s, they
+      should be a good cultural fit.
+      </p>
 
-<p>This can be between 5% and 20%</p>
-
+      {{ govukInput({
+        classes: "govuk-input--width-5",
+        hint: {
+          text: "This can be between 5% and 20%"
+        }
+      }) }}
 
       <h2 class="govuk-heading-m">
         Price
@@ -47,12 +63,17 @@
 
       <p>Price is evaluated on how close each supplier’s quote is to the cheapest quote.</p>
 
-      <p>This can be between 20% and 85%</p>
+      {{ govukInput({
+        classes: "govuk-input--width-5",
+        hint: {
+          text: "This can be between 20% and 85%"
+        }
+      }) }}
 
     </div>
   </div>
 
-  <form class="form" action="/technical_competence" method="post">
+  <form class="form" action="/evaluation_process" method="post">
   <button class="govuk-button" data-module="govuk-button">
 Save and continue
   </button>
